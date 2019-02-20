@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    var width;
+    var height;
+    var width = parseInt(prompt("Nhap vao width "));
+    var height = parseInt(prompt("Nhap vao height "));
+    var area = width * height;
+</script>
+<button type="button" onclick="ShowArea();">Ket Qua Hien ra!</button>
+<script>
+    function ShowArea() {
+        document.write("Nhap vao width: "+"<br/>"+ width);
+        document.write("<br/>");
+        document.write("Nhap vao hieght: "+"<br/>"+ height);
+        document.write("<br/>");
+        document.write("Area la: "+ area);
+        
+    }
+</script>
+</body>
+</html>
