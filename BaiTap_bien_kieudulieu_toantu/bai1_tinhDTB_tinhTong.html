@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    var Toan;
+    var Vat_Ly;
+    var Hoa;
+    var Toan = parseInt(prompt("Nhap vao Diem Toan "));
+    var Vat_Ly = parseInt(prompt("Nhap vao Diem Vat Ly"));
+    var Hoa = parseInt(prompt("Nhap vao Diem Hoa"));
+
+    var Tong = Toan + Vat_Ly + Hoa;
+    var DTB = (Toan + Vat_Ly + Hoa)/3;
+</script>
+<button type="button" onclick="Show();">Hien Thi Ket Qua</button>
+<script>
+    function Show() {
+        document.write("Diem Toan: "+Toan+"<br/>");
+        document.write("Diem Vat Ly: "+Vat_Ly+"<br/>");
+        document.write("Diem Hoa: "+Hoa+"<br/>");
+        document.write("Tong Diem: "+Tong+"<br/>");
+        document.write("Diem Trung Binh:"+DTB);
+    }
+</script>
+</body>
+</html>
