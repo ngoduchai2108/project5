@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<form>
+
+    <h3> Phep Tinh Hai So</h3>
+    So_A:<input type="text" id="so_a" placeholder="Nhap so A">
+
+    So_B:<input type="text" id="so_b" placeholder="Nhap so B">
+    <br/><br/>
+    <button type="button" onclick="Tong();"> Tong(+)</button>
+
+    <button type="button" onclick="Hieu();">Hieu(-)</button>
+
+    <button type="button" onclick="Tich();">Tich(*)</button>
+
+    <button type="button" onclick="Thuong();">Thuong(/)</button>
+    <br/><br/>
+
+    <p>Ket Qua: <span id="ket_qua"></span></p>
+
+</form>
+
+
+<body>
+<script>
+    function Tong() {
+        var so_a=parseInt(document.getElementById('so_a').value);
+        var so_b=parseInt(document.getElementById('so_b').value);
+        document.getElementById('ket_qua').innerHTML=so_a+so_b;
+    }
+    function Hieu() {
+        var so_a=parseInt(document.getElementById('so_a').value);
+        var so_b=parseInt(document.getElementById('so_b').value);
+        document.getElementById('ket_qua').innerHTML=so_a-so_b;
+    }
+    function Tich() {
+        var so_a=parseInt(document.getElementById('so_a').value);
+        var so_b=parseInt(document.getElementById('so_b').value);
+        document.getElementById('ket_qua').innerHTML=so_a*so_b;
+    }
+    function Thuong() {
+        var so_a=parseInt(document.getElementById('so_a').value);
+        var so_b=parseInt(document.getElementById('so_b').value);
+        document.getElementById('ket_qua').innerHTML=so_a/so_b;
+    }
+</script>
+
+
+</body>
+</html>
