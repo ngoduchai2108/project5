@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<form >
+  Amount:<input type="text" id="amount" placeholder="Nhap so tien">
+    <br/>
+    From_currency:<select name="fromcurrency" id="fromcurrency">
+                    <option value="USD" >USD</option>
+                    <option value="EUR" >EUR</option>
+                </select>
+    <br/>
+    To_currency:<select name="tocurrency">
+                    <option value="VND" id="tocurrency">VND</option>
+                    </select>
+    <br/>
+    <input type="button" value="Convert" onclick="Convert();">
+</form>
+<p> So tien duoc chuyen la:<span id="changed"></span></p>
+
+<script>
+    function Convert() {
+        var input_amount;
+        var kieu_chon=document.getElementById('fromcurrency').value;
+        input_amount=parseInt(document.getElementById('amount').value);
+        var don_vi=document.getElementById('tocurrency').value;
+      //  document.write(kieu_chon);
+        if(kieu_chon == "USD"){
+            document.getElementById('changed').innerHTML=input_amount*23000+"     "+don_vi;
+        }
+        else
+            document.getElementById('changed').innerHTML=input_amount*27000+"    "+don_vi;
+    }
+</script>
+</body>
+</html>
