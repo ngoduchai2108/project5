@@ -20,7 +20,7 @@
     <button type="button" onclick="Thuong();">Thuong(/)</button>
     <br/><br/>
 
-    <p>Ket Qua: <span id="ket_qua"></span></p>
+    <p>Ket Qua: <input id="ket_qua"></p>
 
 </form>
 
@@ -30,22 +30,22 @@
     function Tong() {
         var so_a=parseInt(document.getElementById('so_a').value);
         var so_b=parseInt(document.getElementById('so_b').value);
-        document.getElementById('ket_qua').innerHTML=so_a+so_b;
+        document.getElementById('ket_qua').value=so_a+so_b;
     }
     function Hieu() {
         var so_a=parseInt(document.getElementById('so_a').value);
         var so_b=parseInt(document.getElementById('so_b').value);
-        document.getElementById('ket_qua').innerHTML=so_a-so_b;
+        document.getElementById('ket_qua').value=so_a-so_b;
     }
     function Tich() {
         var so_a=parseInt(document.getElementById('so_a').value);
         var so_b=parseInt(document.getElementById('so_b').value);
-        document.getElementById('ket_qua').innerHTML=so_a*so_b;
+        document.getElementById('ket_qua').value=so_a*so_b;
     }
     function Thuong() {
         var so_a=parseInt(document.getElementById('so_a').value);
         var so_b=parseInt(document.getElementById('so_b').value);
-        document.getElementById('ket_qua').innerHTML=so_a/so_b;
+        document.getElementById('ket_qua').value=so_a/so_b;
     }
 </script>
 

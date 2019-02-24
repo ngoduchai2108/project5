@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<form>
+    <h3>May Tinh Don Gian</h3>
+    <br/>
+    So A:<input type="text" id="so_a">
+    So B:<input type="text" id="so_b">
+
+    <select id="chon" onchange="show();">
+        <option value="">Phep Tinh</option>
+        <option value="tong">Tong(+)</option>
+        <option value="hieu">Hieu(-)</option>
+        <option value="tich">Tich(*)</option>
+        <option value="thuong">Thuong(/)</option>
+    </select>
+    <br/><br/>
+    Ket Qua:<input id="ket_qua" >
+</form>
+<script>
+    function show() {
+        var chon =document.getElementById("chon");
+        var a=parseInt(document.getElementById("so_a").value);
+        var b=parseInt(document.getElementById("so_b").value);
+
+        switch (chon.value) {
+            case "tong":
+                document.getElementById("ket_qua").value= a+b;
+                break;
+            case "hieu":
+                document.getElementById("ket_qua").value = a-b;
+                break;
+            case "tich":
+                document.getElementById("ket_qua").value=a*b;
+                break;
+            case  "thuong":
+                document.getElementById("ket_qua").value=a/b;
+                break;
+            default:
+                alert("Ban chua chon phep tinh!");
+        }
+
+    }
+</script>
+
+</body>
+</html>
