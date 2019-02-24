@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body onload="doReady()">
+
+<img height="200" id="anh" src="cay_huynh_anh.jpg" style="position: absolute; top: 0;left: 0" width="180"/>
+<script>
+    function upArrowPressde() {
+        var element = document.getElementById("anh");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+
+    function downArrowPressde() {
+        var element = document.getElementById("anh");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+
+    function leftArrowPressde() {
+        var element = document.getElementById("anh");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+
+    function rightArrowPressde() {
+        var element = document.getElementById("anh");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+    }
+
+    function moveSlection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressde();
+                break;
+            case 38:
+                upArrowPressde();
+                break;
+            case 39:
+                rightArrowPressde();
+                break;
+            case 40:
+                downArrowPressde();
+                break;
+        }
+    }
+
+    function doReady() {
+        window.addEventListener('keydown', moveSlection);
+    }
+</script>
+</body>
+</html>
