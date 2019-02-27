@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<form>
+    <input id="thang" type="text">
+    <button id="tinh" onclick="show();" type="button">Tinh so ngay</button>
+    <br/>
+    <span id="ket_qua"></span>
+</form>
+<script>
+    function show() {
+        let Thang = parseInt(document.getElementById('thang').value);
+        let Ket_qua = document.getElementById('ket_qua');
+        switch (true) {
+            case (Thang === 1 || Thang === 3 || Thang === 5 || Thang === 7 || Thang === 8 || Thang === 10 || Thang === 12):
+                Ket_qua.innerHTML = " Thang 1 co 31 ngay.";
+                break;
+            case (Thang === 4 || Thang === 6 || Thang === 9 || Thang === 11):
+                Ket_qua.innerHTML = "Thang 4 co 30 ngay.";
+                break;
+            case (Thang===2):
+                Ket_qua.innerHTML = "Thang 2 co 28 hoac 29 ngay.";
+                break;
+        }
+
+    }
+</script>
+</body>
+</html>

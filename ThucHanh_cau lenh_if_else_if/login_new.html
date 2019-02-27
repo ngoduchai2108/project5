@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<form>
+    <h3>Đăng Nhập</h3>
+    UserName:<input type="text" id="name" placeholder="Nhap username">
+    Password:<input type="password" id="pass" placeholder="Nhap password">
+    <button type="button" id="login" onclick="Login();">Login</button>
+
+</form>
+<body>
+<script>
+    function Login() {
+        var ten = document.getElementById('name').value;
+        var m_khau=document.getElementById('pass').value;
+        if (ten== "Admin" && m_khau=="password"){
+            alert('Welcome!');
+        }
+        else
+            alert('Moi Nhap Lai!');
+    }
+</script>
+</body>
+</html>

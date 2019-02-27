@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<form>
+    <h3>Tinh Chi so Chieu cao can nang</h3>
+    Chieu cao:<input id="chieu_cao" placeholder="Nhap chieu cao (m)" type="text">
+    Can nang:<input id="can_nang" placeholder="Nhap can nang (kg)" type="text">
+    <button type="button" onclick="show();">IBM</button>
+    <span id="ket_qua"></span>
+</form>
+<script>
+    function show() {
+        let c_cao = parseFloat(document.getElementById('chieu_cao').value);
+        let c_nang = parseFloat(document.getElementById('can_nang').value);
+        let b = c_cao*c_cao;
+        let ibm = c_nang / b;
+        switch (true) {
+            case (ibm < 18.5):
+                document.getElementById('ket_qua').innerHTML = ibm + "---  Underweight";
+                break;
+            case (18.5 <= ibm < 25.0):
+                document.getElementById('ket_qua').innerHTML = ibm + "---  Normal";
+                break;
+            case (25 <= ibm < 30.0):
+                document.getElementById('ket_qua').innerHTML = ibm + "--- Overweight";
+                break;
+            case (30.0 <= ibm):
+                document.getElementById('ket_qua').innerHTML = ibm + "--- Obese";
+                break;
+        }
+    }
+</script>
+</body>
+</html>

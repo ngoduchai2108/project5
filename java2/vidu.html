@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<form>
+    So_a:<input type="text" id="so_a" >
+    So_b:<input type="text" id="so_b" >
+    <p> Ket_Qua_Hien_Thi: <span id="ket_qua"></span></p>
+    <br/>
+    <button type="button" id="cong" onclick="Tong();"> (+)</button>
+</form>
+
+<body>
+<script>
+    function Tong() {
+        var a = document.getElementById('so_a').value;
+        var b = document.getElementById('so_b').value;
+        document.getElementById('ket_qua').innerHTML="";
+    }
+</script>
+</body>
+
+</html>
