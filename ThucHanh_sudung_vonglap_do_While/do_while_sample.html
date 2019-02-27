@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<span id="demo"></span>
+    <script>
+        let n;
+        let text="";
+        do{
+            n=parseInt(prompt('Nhap gia tri tu 1 den 10'));
+            if (1<=n && n<=10){
+                text+="so ban vua nhap la: "+n+"<br/>";
+                document.getElementById('demo').innerHTML=text;
+            }
+            else {
+                document.getElementById('demo').innerHTML=text;
+            }
+
+        }while (1<=n && n<=10);
+        
+    </script>
+</body>
+</html>
