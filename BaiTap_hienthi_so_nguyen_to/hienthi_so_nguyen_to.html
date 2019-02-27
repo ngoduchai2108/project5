@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<span id="demo"></span>
+    <script>
+        let n;
+        n=parseInt(prompt('Nhap n:'));
+        let dem=0;
+        let i=2;
+        let j;
+        let text =n+" so nguyen to dau tien la: "
+        while (dem!==n){
+
+            let kt=true;
+
+            for(j=2;j<=Math.sqrt(i);j++){
+                if (i%j===0){
+                    kt=false;
+                    break;
+                }
+                // // else {
+                //     kt=true;
+                // // }
+            }
+
+            if (kt==true){
+                dem++;
+                if (dem==n){
+                    text+=i+".";
+                }
+                else{
+                    text+=i+" , ";
+                }
+            }
+            i++;
+        }
+        document.getElementById('demo').innerHTML=text;
+    </script>
+</body>
+</html>
