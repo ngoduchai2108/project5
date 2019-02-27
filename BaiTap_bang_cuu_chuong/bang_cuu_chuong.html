@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<h1>Bang Cuu Chuong</h1>
+<br><br>
+<script>
+    let i;
+    let j;
+    let text;
+    text="<table border='1' width='1200' cellspacing='2' cellpadding='8'>"
+    for (j=1;j<=9;j++){
+        text+="<tr>";
+        for (i=2;i<=9;i++){
+            text+="<td>"+i+" x "+j+" = " + i*j+"</td>";
+        }
+        text+="</tr>";
+    }
+    text+="</table>";
+    document.write(text);
+</script>
+</body>
+</html>
