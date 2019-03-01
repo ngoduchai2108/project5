@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+//1 chuoi la 1 mang
+    // let x="hahdkabh";
+    // document.write(x[0]);
+    let num=prompt('nhao so:');
+    let str=num.toString();
+    let result=[str[0]];
+    for (let i=1;i<str.length;i++){
+        if (str[i]%2===0 &&  str[i-1]%2===0){
+            result[result.length]="-"+str[i];
+            // result[result.length]=str[i];
+        }
+        else {
+            result[result.length]=str[i];
+        }
+    }
+    document.write(result.join(""));
+    
+</script>
+</body>
+</html>
