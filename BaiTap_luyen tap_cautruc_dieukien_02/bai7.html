@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<table width="400" style="text-align: center">
+    <tr>
+        <td><h3>Giai Phuong Trinh Bac 2: ax2 + bx + c = 0</h3></td>
+    </tr>
+</table>
+<span id="demo"></span>
+<body>
+<script>
+    var a=parseFloat(prompt('Nhap a:'));
+    var b=parseFloat(prompt('Nhap b:'));
+    var c=parseFloat(prompt('Nhap c:'));
+    var text="";
+    text+="so a = "+a+"<br/>"
+    text+="so b = "+b+"<br/>"
+    text+="so c = "+c+"<br/>"
+    if (a==0){
+        if (b==0){
+            if (c==0){
+                text+="Phuong trinh vo so nghien!"
+            }
+            else {
+                text+="Phuong trinh vo nghiem!"
+            }
+        }
+        else {
+            text+="Phuong trinh co nghiem la : x = "+-c/b+".";
+        }
+    }
+    else {
+        var delta=b*b-4*a*c;
+        var x1=(-b+2*Math.sqrt(delta))/(2*a);
+        var x2=(-b-2*Math.sqrt(delta))/(2*a);
+        if (delta>0){
+            text+="Phuong trinh co nghiem thu nhat la: x1 = "+x1+"."+"<br/>";
+            text+="Phuong trinh co nghiem thu hai la: x2 = "+x2+"."+"<br/>";
+        }
+        else if (delta==0){
+            text+="Phuong trinh co nghiem duy nhat la: x = "+-b/(2*a)+"."+"<br/>";
+        }
+        else {
+            text+="Phuong trinh vo nghiem!"
+        }
+    }
+    document.getElementById('demo').innerHTML=text;
+</script>
+</body>
+</html>

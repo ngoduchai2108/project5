@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<!--<h3>Kiem tra mot so co phai tuoi cua mot nguoi khong?</h3>-->
+<!--<span id="demo"></span>-->
+<body>
+<script>
+    var text="";
+    var tuoi=parseInt(prompt('Nhap so:'));
+    if(tuoi>0 && tuoi<=120){
+        alert(tuoi+' La tuoi cua mot nguoi!')
+    }
+    else{
+        text+=tuoi+' Khong la tuoi cua mot nguoi.'+"<br/>"+'Moi nhap lai so!!!';
+        // alert(text);
+        document.write(text);
+    }
+
+</script>
+</body>
+</html>

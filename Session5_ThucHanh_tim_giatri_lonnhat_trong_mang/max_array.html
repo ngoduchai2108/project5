@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search_Max_Array</title>
+</head>
+<h3>Search_Max_Array</h3><br/>
+<span id="demo"></span>
+<body>
+<script>
+    let array=[1,4,2,7,-6,-8,9,22];
+    let Max=array[0];
+    let first=0;
+    let text="["+array[0]+",";
+    for (let i=1;i<array.length;i++){
+        if (i===array.length-1){
+            text+=array[i]+"]"+"<br/>";
+        }
+        else {
+            text+=array[i]+",";
+        }
+        if (array[i]>=Max){
+            Max=array[i];
+            first=i;
+        }
+    }
+    text+='Phan tu lon nhat cua mang la:'+Max+' voi chi so la: '+first;
+    document.write(text);
+
+</script>
+</body>
+</html>

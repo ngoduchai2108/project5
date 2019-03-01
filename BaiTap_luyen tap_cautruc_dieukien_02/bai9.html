@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    var a=parseFloat(prompt('Nhap canh a:'));
+    var b=parseFloat(prompt('Nhap canh b:'));
+    var c=parseFloat(prompt('Nhap canh c:'));
+    if (a>0&&b>0&&c>0){
+        if (a+b>c && b+c>a && c+a>b){
+            alert('( '+a+' , '+b+' , '+c+' )'+'La canh cua mot tam giac!!!')
+        }
+        else {
+            alert('( '+a+' , '+b+' , '+c+' )'+'Khong la canh cua mot tam giac!!!')
+        }
+    }
+    else {
+        alert('Moi nhap lai a, b, c !!!')
+    }
+</script>
+</body>
+</html>

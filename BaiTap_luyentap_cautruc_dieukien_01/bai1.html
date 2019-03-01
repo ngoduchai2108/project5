@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<span id="demo"></span>
+<script>
+    let a=parseInt(prompt('Nhap so thu 1:'));
+    let b=parseInt(prompt('Nhap so thu 2:'));
+    if (a%b===0){
+        document.getElementById('demo').innerHTML=a+" chia het cho "+b+".";
+    }
+    else
+        document.getElementById('demo').innerHTML=a+" khong chia het cho"+b+".";
+</script>
+</body>
+</html>

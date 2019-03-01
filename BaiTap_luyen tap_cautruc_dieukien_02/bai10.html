@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<h3>Tinh Gia Dien Hang Thang</h3>
+<span id="demo"></span>
+<body>
+<script>
+    var dau=parseFloat(prompt('Nhap so dien dau thang.'));
+    var cuoi=parseFloat(prompt('Nhap so dien cuoi thang.'));
+    var he_so=parseFloat(prompt('Nhap so tien moi so dien (VND).'));
+    var text="";
+    text+="So dien dau thang la: "+dau + "<br/>";
+    text+="So dien dau thang la: "+cuoi + "<br/>";
+    text+="Tien moi so dien la: "+he_so + " VND / 1 so dien"+"<br/>";
+    text+="Tien dien la: "+(cuoi-dau)*he_so+" VND.";
+    document.getElementById('demo').innerHTML=text;
+</script>
+</body>
+</html>

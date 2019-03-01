@@ -10,21 +10,26 @@
 <script>
     let n=0;
     let text="";
+    let i=0;
+    let sum=0;
     while (n!==-1&&n>=0&&n!==undefined){
-        let i=0;
-        let sum=0;
         n=parseInt(prompt('Nhap vao n: '));
-        for ( ; i<=n;i++){
-            sum+=i;
-        }
+        // for ( ; i<=n;i++){
+        //     sum+=i;
+        // }
+
         if (n>=0){
-            text+="Tong cac so tu 0 den "+n+" la: "+sum+"<br/>";
-            document.getElementById('demo').innerHTML=text;
+            // text+="Tong cac so tu 0 den "+n+" la: "+sum+"<br/>";
+            // document.getElementById('demo').innerHTML=text;
+            text+="So thu nhat la:"+n+"<br/>"
+            sum+=n;
         }
-        else {
-            alert("Ban dien sai!");
-        }
+        // else {
+        //     alert("Ban dien sai!");
+        // }
+
     }
+    document.getElementById('demo').innerHTML=text+"<br/>"+"Tong cac so duoc nhap la: "+ sum+".";
 </script>
 </body>
 </html>

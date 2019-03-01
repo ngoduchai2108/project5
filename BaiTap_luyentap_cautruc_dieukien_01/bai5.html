@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let diem1=parseFloat(prompt('Nhap diem bai thi kiem tra:'));
+    let diem2=parseFloat(prompt('Nhap diem bai thi giua ky:'));
+    let diem3=parseFloat(prompt('Nhap diem bai thi cuoi ky:'));
+    let dtb=(diem1*2+diem2*3+diem3*5)/10;
+    switch (true) {
+        case (dtb>=8.0):
+            document.write("Diem trung binh cua ban la:"+dtb+"<br>"+"Ban la hoc sinh Gioi");
+            break;
+        case (dtb>=6.5 && dtb<8.0):
+            document.write("Diem trung binh cua ban la:"+dtb+"<br>"+"Ban la hoc sinh Kha");
+            break;
+        case (4.0<=dtb && dtb<6.5):
+            document.write("Diem trung binh cua ban la:"+dtb+"<br>"+"Ban la hoc sinh Trung Binh");
+            break;
+        default:
+            document.write("Diem trung binh cua ban la:"+dtb+"<br>"+"Ban la hoc sinh Kem.");
+
+    }
+</script>
+</body>
+</html>
