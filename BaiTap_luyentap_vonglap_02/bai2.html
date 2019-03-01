@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<h3>Tinh giai thua cua mot so nguyen duong</h3>
+<span id="demo"></span>
+<body>
+<script>
+    while (true){
+        var n=parseFloat(prompt('Nhap so nguyen duong n:'));
+        if (n>=0){
+            break;
+        }
+        else {
+            alert('Nhap lai n!!!');
+        }
+    }
+    var i=1;
+    var giai_thua=1;
+    while (true){
+        i++;
+        if (i==n){
+            giai_thua*=i;
+            break;
+        }
+        else {
+            giai_thua*=i;
+        }
+    }
+    document.getElementById('demo').innerHTML="Giai thua cua "+n+' la: '+n+'! = '+giai_thua;
+
+</script>
+</body>
+</html>

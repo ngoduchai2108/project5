@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<table border="0" cellspacing="0">
+    <tr >
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= 3; i++) {
+                    if (i > 3 - j) {
+                        document.write(" * ");
+                    } else {
+                        document.write("   ");
+                    }
+                }
+                document.write("<br/>")
+            }
+        </script></pre>
+        </td>
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= 3; i++) {
+                    if (j < i && i < 3 - j + 1) {
+                        document.write("   ")
+                    } else {
+                        document.write(" * ");
+                    }
+                }
+                document.write('<br/>')
+            }
+        </script></pre>
+        </td>
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= j; i++) {
+                    document.write(" * ");
+                }
+                document.write("<br/>");
+            }
+
+        </script></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= 3; i++) {
+                    if (i < j) {
+                        document.write("   ");
+                    } else {
+                        document.write(" * ");
+                    }
+
+                }
+                document.write("<br/>")
+            }
+
+        </script></pre>
+        </td>
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= 3; i++) {
+                    document.write(" * ");
+                }
+                document.write("<br/>");
+            }
+        </script></pre>
+        </td>
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= 3 - j + 1; i++) {
+                    document.write(" * ");
+                }
+                document.write("<br/>");
+            }
+        </script></pre>
+        </td>
+    </tr>
+    <tr>
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= 3; i++) {
+                    document.write("   ");
+                }
+                document.write("<br/>");
+            }
+        </script></pre>
+        </td>
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= 3; i++) {
+                    if (j <= i && i <= 3 - j + 1) {
+                        document.write(" * ")
+                    } else {
+                        document.write("   ");
+                    }
+                }
+                document.write('<br/>')
+            }
+        </script></pre>
+        </td>
+
+        <td><pre><script>
+            for (let j = 1; j <= 3; j++) {
+                for (let i = 1; i <= 3; i++) {
+                    document.write("   ");
+                }
+                document.write("<br/>");
+            }
+        </script></pre>
+        </td>
+
+    </tr>
+</table>
+<style>
+    tr {
+        margin: 0;
+    }
+</style>
+</body>
+</html>
