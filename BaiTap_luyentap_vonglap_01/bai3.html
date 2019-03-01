@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<h3>Day Fibonacci</h3>
+<span id="demo"></span>
+<body>
+<script>
+    let n= parseFloat(prompt('Nhap n:'));
+    let text=n+ " so Fibonacci dau tien la : ";
+    let i=1;
+    let j=1;
+    text+=i+"  ";
+    text+=j+"  ";
+    for (let dem=2;dem<=n;dem++){
+        i+=j;
+        text+=i+"  ";
+        dem++;
+        if (dem==n){
+            break;
+        }
+        j+=i;
+        text+=j+"  ";
+    }
+    document.getElementById('demo').innerHTML=text;
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<h3>Game Doan So</h3>
+<button type="button" onclick="choi();">Choi</button>
+<body>
+<script>
+    function choi() {
+        var a=parseFloat(prompt('So duoc nhap nam trong khoang [a,b]:'+'a = '));
+        while (true){
+            var b=parseFloat(prompt('b ='));
+            if (b<=a){
+                alert('Nhap lai b !!!')
+            }
+            else {
+                break;
+            }
+        }
+        var s=Math.floor((Math.random()*(b-a))+a);
+        while (true){
+            var n=parseFloat(prompt('Nhap so trong khoang tu '+a+' den '+b));
+            if (n>=a && n<=b){
+                if (n===s){
+                    alert('Chuc mung ban doan dung!!!');
+                    break;
+                }
+                else if (n>s) {
+                    var chon1=confirm('Lon Hon !!!'+'<br/>'+'Ban Co Muon Choi Lai.');
+                    if (chon1===false){
+                        break;
+                    }
+                }
+                else {
+                    var chon2=confirm('Nho Hon !!!'+'<br/>'+'Ban Co Muon Choi Lai.');
+                    if (chon2===false){
+                        break;
+                    }
+                }
+            }
+            else {
+                alert(n+' khong thuoc khoang tu '+a+' den '+b+'. Moi nhap lai:');
+            }
+        }
+
+    }
+
+
+
+</script>
+</body>
+</html>

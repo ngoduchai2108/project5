@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let i=1;
+    let j=1;
+    let dem=2;
+    let sum=2;
+    let text=" Tong 20 so dau tien trong day fibonacci la: S= "+ i +" + "+j;
+    while (true){
+        i+=j;
+        dem++;
+        sum+=i;
+        text+=" + "+i;
+        if (dem==20){
+            text+=" = "+sum;
+            break;
+        }
+        j+=i;
+        dem++;
+        sum+=j;
+        text+=" + "+j;
+        if (dem==20){
+            text+=" = "+sum;
+            break;
+        }
+
+    }
+    document.write(text);
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let i=1;
+    let sum=0;
+    let dem=0;
+    let text=" Tong 30 so tu nhien dau tien chia het cho 7 la: "+"<br/>";
+    while (true){
+        if (i%7==0){
+            dem++;
+            if (dem==1){
+                text+=" "+i;
+                i+=7;
+                sum+=i;
+            }
+            text+=" + "+i;
+            i+=7;
+            sum+=i;
+        }
+        else {
+            i++;
+        }
+        if (dem===30){
+            break;
+        }
+    }
+    text+=" = "+sum;
+    document.write(text);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    while (true){
+        let n=parseFloat(prompt("Nhap so tu 1 den 100:"));
+        switch (true) {
+            case n%3===0&&n%5===0:
+                alert('FizzBuzz');
+                break;
+            case n%3===0:
+                alert('Fizz');
+                break;
+            case n%5===0:
+                alert('Buzz');
+                break;
+            default:
+                alert('Moi nhap lai');
+        }
+        // if (n%3===0&&n%5===0){
+        //     alert('FizzBuzz');
+        // }
+        // if (n%3===0){
+        //     alert('Fizz');
+        // }
+        // if (n%5===0){
+        //     alert('Buzz');
+        // }
+        // else {
+        //     alert('Nhap lai');
+        // }
+    }
+</script>
+</body>
+</html>
